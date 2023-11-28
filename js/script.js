@@ -17,6 +17,16 @@ function generateGrid() {
         cell.textContent = i;
         // aggiungo i div(classe cells) al cellsContainer
         cellsContainer.appendChild(cell);
+
+
+        // aggiungo un EventListener in modo che al click la cella cliccata si colora di azzurro ed emetto un messaggio in console con il numero della cella cliccata.
+
+        cell.addEventListener("click",() =>{
+            cell.style.backgroundColor ="rgb(0, 179, 255)";
+            console.log("numero cella: ", i);
+        }
+           
+        )
     }
 }
 
